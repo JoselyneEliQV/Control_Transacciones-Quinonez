@@ -10,6 +10,9 @@ namespace Taller_Metodos_CRUD_Quinonez.Models
     public class AplicationDbContext : DbContext
     {
         public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<CitaMedica> CitasMedicas { get; set; }
+        public DbSet<Doctor> Doctores { get; set; }
+        public DbSet<Paciente> Pacientes { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
